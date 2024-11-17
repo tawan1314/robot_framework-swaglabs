@@ -1,0 +1,11 @@
+*** Variables ***
+${overview.lbl_header}           xpath=//div[text()="${overview_page.lbl_header}"]
+${overview.lbl_quantity}         xpath=//div[text()="${overview_page.lbl_quantity}"]//following::div[text()="***quantity***"]
+${overview.lbl_item_info}        xpath=//div[text()="${overview_page.lbl_description}"]//following::div[text()="***item_name***"]//following::div[text()="***description***"]//following::div[text()="${items_list.currency}" and text()="***price***"]
+${overview.lbl_payment_info}     xpath=//div[text()="${overview_page.lbl_payment_info}"]//following::div[1]
+${overview.lbl_shipping_info}    xpath=//div[text()="${overview_page.lbl_shipping_info}"]//following::div[text()="${overview_page.shipping_options.free_pony_express_delivery}"]
+${overview.lbl_item_total}       xpath=//div[text()="${overview_page.lbl_item_total}" and text()="***item_total***"]
+${overview.lbl_tax}              xpath=//div[text()="${overview_page.lbl_tax}" and text()="***tax***"]
+${overview.lbl_total}            xpath=//div[text()="${overview_page.lbl_total}" and text()="***total***"]
+${overview.btn_finish}           xpath=//a[text()="${overview_page.btn_finish}"]
+${overview.btn_cancel}           xpath=//a[text()="${overview_page.btn_cancel}"]
