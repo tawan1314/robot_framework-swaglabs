@@ -1,0 +1,7 @@
+SWAGLABS_WEBSITE: https://www.saucedemo.com/v1/
+BROWSER: Chrome
+
+GLOBAL_TIMEOUT: 10s
+SHORT_TIMEOUT: 5s
+
+GLOBAL_TIMES: 5x
