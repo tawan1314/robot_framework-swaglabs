@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ${CURDIR}/../../resources/import.resource
+Resource          ${CURDIR}/../../resources/import.resource
 Test Setup        common.Open SwagLabs website
 Test Teardown     common.Close SwagLabs website
 
