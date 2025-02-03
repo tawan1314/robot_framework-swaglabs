@@ -3,6 +3,14 @@ Resource    ${CURDIR}/../../import.resource
 
 
 *** Keywords ***
+Verify all element on the page
+    checkout_your_information_page.Verify header
+    checkout_your_information_page.Verify firstname field
+    checkout_your_information_page.Verify lastname field
+    checkout_your_information_page.Verify zip postal code field
+    checkout_your_information_page.Verify continue button
+    checkout_your_information_page.Verify cancel button
+
 Input user information
     [Arguments]    ${user_info}
     checkout_your_information_page.Verify header
@@ -30,3 +38,11 @@ Verify and close the error required
     checkout_your_information_page.Verify error required    ${required}
     checkout_your_information_page.Verify close error required button
     checkout_your_information_page.Click close error required button
+
+Verify and click continue button
+    checkout_your_information_page.Verify continue button
+    checkout_your_information_page.Click continue button
+
+Verify and click cancel button
+    checkout_your_information_page.Verify cancel button
+    checkout_your_information_page.Click cancel button
